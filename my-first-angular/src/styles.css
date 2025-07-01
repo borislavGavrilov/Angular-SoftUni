@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@keyframes softGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, #a8e063, #56ab2f, #f3f9a7, #d4fc79);
+  background-size: 400% 400%;
+  animation: softGradient 20s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4b5d16;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(74, 95, 22, 0.4);
+}
