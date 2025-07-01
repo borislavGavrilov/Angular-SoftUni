@@ -7,7 +7,7 @@ class Ticket{
     }
 }
 
-function ticketManagment(input: string[], sortingCriteria: string): Ticket[] {
+function ticketManagement(input: string[], sortingCriteria: string): Ticket[] {
     const tickets = input.map(line => {
         const [destination, price, status] = line.split('|');
         return new Ticket(destination, Number(price), status);
@@ -26,12 +26,12 @@ function ticketManagment(input: string[], sortingCriteria: string): Ticket[] {
     });
 }
 
-const input = [
+const ticketInput = [
     'Philadelphia|94.20|available', 
     'New York City|95.99|available',
     'Boston|126.20|departed',]
 
-const sortingCriteria = 'price';
+const sortCriteria = 'price';
 
-const ticketResults = ticketManagment(input, sortingCriteria);
-console.log(ticketResults);
+const ticketResultsSorted = ticketManagement(ticketInput, sortCriteria);
+console.log(ticketResultsSorted);
