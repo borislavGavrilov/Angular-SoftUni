@@ -6,3 +6,8 @@ h1{
     margin-top: 20px;
     margin-bottom: 20px;  
 }
+
+.highlight{
+    color: purple;
+    font-weight: bold;
+}

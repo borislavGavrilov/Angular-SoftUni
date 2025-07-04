@@ -1,1 +1,15 @@
 <h1>Hello {{name}}</h1>
+
+<ul>
+    @for (user of users; track user) {
+        <li (click) = "Ongreeting(user.name)">{{user.name}} {{user.company.name}}</li>
+    }
+
+    @if (isLogin) {
+        <li>Welcome back!</li>
+    } @else {
+        <li>Please log in.</li>
+    }
+
+    <p [class] = 'classCss'>This is dynamic class !</p>
+</ul>
