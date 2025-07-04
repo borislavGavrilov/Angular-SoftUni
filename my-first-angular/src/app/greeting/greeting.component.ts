@@ -22,7 +22,7 @@ export class GreetingComponent {
     }},]
 
   name: string = 'World';
-  isLogin: boolean = false;
+  isLogin: boolean = true;
 
  Ongreeting(name : string){
    console.log(`Hello, ${name}!`);
